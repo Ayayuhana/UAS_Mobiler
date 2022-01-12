@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BiodataActivity">
+
+    <RelativeLayout
+        android:id="@+id/biodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="#FFFDFC"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/user_profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="85dp"
+            android:src="@drawable/foto"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#09134A"/>
+
+        <TextView
+            android:id="@+id/nama_lengkap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:text="@string/nama_lengkap_aya_yuhana"
+            android:textColor="@color/color2"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/kelas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nama_lengkap"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/color2"
+            android:text="@string/nim"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/prodi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kelas"
+            android:layout_marginTop="20dp"
+            android:text="@string/prodi"
+            android:textColor="@color/color2"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/alamat_lengkap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prodi"
+            android:layout_marginTop="20dp"
+            android:text="@string/hobi"
+            android:textColor="@color/color2"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/alamat1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alamat_lengkap"
+            android:layout_marginTop="20dp"
+            android:text="@string/alamat_sumbawaa"
+            android:textColor="@color/color2"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ttl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alamat1"
+            android:layout_marginTop="20dp"
+            android:text="@string/bulan"
+            android:textSize="20dp"
+            android:textColor="@color/color2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/golongan_darah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ttl"
+            android:layout_marginTop="20dp"
+            android:text="@string/gol"
+            android:textColor="@color/color2"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/agama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/golongan_darah"
+            android:layout_marginTop="20dp"
+            android:text="@string/agama_islam"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/kembali_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/biodata"
+        android:layout_margin="7dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#09134A"
+        android:padding="10dp"
+        android:text="@string/kembalii"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</RelativeLayout>
