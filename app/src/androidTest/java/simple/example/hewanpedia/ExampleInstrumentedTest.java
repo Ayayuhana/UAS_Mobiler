@@ -1,4 +1,4 @@
-package simple.example.hewanpedia;
+package simple.example.uasmobile;
 
 import android.content.Context;
 
