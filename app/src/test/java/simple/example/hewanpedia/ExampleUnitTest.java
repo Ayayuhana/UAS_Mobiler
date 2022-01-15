@@ -1,4 +1,4 @@
-package simple.example.hewanpedia;
+package simple.example.uasmobile;
 
 import org.junit.Test;
 
